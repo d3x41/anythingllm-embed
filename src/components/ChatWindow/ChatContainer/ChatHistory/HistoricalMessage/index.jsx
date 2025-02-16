@@ -19,7 +19,7 @@ const HistoricalMessage = forwardRef(
       errorMsg = null,
       sentAt,
     },
-    ref
+    ref,
   ) => {
     const textSize = !!embedderSettings.settings.textSize
       ? `allm-text-[${embedderSettings.settings.textSize}px]`
@@ -99,7 +99,7 @@ const HistoricalMessage = forwardRef(
         )}
       </div>
     );
-  }
+  },
 );
 
 export default memo(HistoricalMessage);

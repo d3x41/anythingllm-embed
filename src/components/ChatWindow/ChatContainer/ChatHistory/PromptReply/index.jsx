@@ -107,7 +107,7 @@ const PromptReply = forwardRef(
         )}
       </div>
     );
-  }
+  },
 );
 
 export default memo(PromptReply);

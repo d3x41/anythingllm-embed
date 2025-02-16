@@ -48,7 +48,7 @@ export default function useGetScriptAttributes() {
         !embedderSettings.settings.embedId
       )
         throw new Error(
-          "[AnythingLLM Embed Module::Abort] - Invalid script tag setup detected. Missing required parameters for boot!"
+          "[AnythingLLM Embed Module::Abort] - Invalid script tag setup detected. Missing required parameters for boot!",
         );
 
       setSettings({
@@ -78,7 +78,7 @@ const validations = {
         !list.every((v) => typeof v === "string" && v.length > 0)
       )
         throw new Error(
-          "Invalid default-messages attribute value. Must be array of strings"
+          "Invalid default-messages attribute value. Must be array of strings",
         );
       return list.map((v) => v.trim());
     } catch (e) {
